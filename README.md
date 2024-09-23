@@ -23,7 +23,7 @@ This project demonstrates how to apply Van Gogh’s style to images using ComfyU
 
   
 
-### 1. Setting Up the Python Environment
+### Setting Up the Python Environment
 
   
 
@@ -55,34 +55,34 @@ Create a Python virtual environment using `venv` and activate it:
 
   
 
-# Installing ComfyUI
+## Installing ComfyUI
 
 
-## 1. Clone the ComfyUI Repository and Install Necessary Dependencies
+### 1. Clone the ComfyUI Repository and Install Necessary Dependencies
 
 
-# Clone ComfyUI
+#### Clone ComfyUI
 
 git clone https://github.com/comfyanonymous/ComfyUI.git
 
   
 
-# Navigate into the directory
+#### Navigate into the directory
 
 cd ComfyUI
 
   
 
-# Install dependencies
+### 2.Install dependencies
 
 pip install -r requirements.txt
 
 
-## Installing Additional Nodes Using UI Manager
+### 3.Installing Additional Nodes Using UI Manager
 
 To install additional nodes like ControlNet and IPAdapter, use the built-in ComfyUI Manager:
 
-### Start ComfyUI:
+#### Start ComfyUI:
 
 ```bash
 python main.py
@@ -95,7 +95,7 @@ From the Manager, install the required nodes:
 ![ComfyUI Manager]()
 
 
-## ComfyUI Manager
+#### ComfyUI Manager
 
 ```bash
 # Navigate to custom_nodes
@@ -103,7 +103,7 @@ cd ComfyUI/custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 ```
 
-## ControlNet
+#### ControlNet
 
 ```bash
 # Navigate to custom_nodes
@@ -113,14 +113,14 @@ cd comfyui_controlnet_aux
 pip install -r requirements.txt
 ```
 
-## IPAdapter
+#### IPAdapter
 
 Create an ipadapter folder inside the models directory of ComfyUI to store IPAdapter models:
 ```bash
 mkdir -p ComfyUI/models/ipadapter
 ```
 
-## 4.Downloading and Placing Models
+### 4.Downloading and Placing Models
 
 - **Stable Diffusion**: Download the diffusion model from this [link](https://civitai.com/models/133005?modelVersionId=357609).
 
@@ -135,7 +135,7 @@ mkdir -p ComfyUI/models/ipadapter
   Place it in `models/ipadapter`.
 
 
-## 5. Running the Workflow
+### 5. Running the Workflow
 
 After installing everything, run ComfyUI:
 
@@ -143,7 +143,7 @@ After installing everything, run ComfyUI:
 python main.py
 ```
 
-## 6.Van Gogh Style Transfer Workflow
+### 6.Van Gogh Style Transfer Workflow
 
 This project uses the following ComfyUI workflow to apply Van Gogh's style to an image:
 
@@ -154,9 +154,9 @@ This project uses the following ComfyUI workflow to apply Van Gogh's style to an
 - **Apply ControlNet**: Enhances the style transfer using ControlNet features.
 - **Save Image**: Saves the final Van Gogh-styled image.
 
-[WORKFLOW IMAGE]()
+![WORKFLOW IMAGE]()
 
-## 7.Troubleshooting
+### 7.Troubleshooting
 
 - **CUDA Errors**: Ensure CUDA is installed and configured correctly for GPU acceleration.
 - **Model Compatibility**: ControlNet models for SD1 and SD2 are not interchangeable. Ensure you use models that match your installed Stable Diffusion version.
