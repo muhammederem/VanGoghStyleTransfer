@@ -92,7 +92,7 @@ Open the UI Manager by clicking the Manager button on the ComfyUI interface (as 
 
 From the Manager, install the required nodes:
 
-![ComfyUI Manager]()
+![ComfyUI Manager](https://github.com/muhammederem/VanGoghStyleTransfer/blob/main/assets/manager.png)
 
 
 #### ComfyUI Manager
@@ -154,7 +154,7 @@ This project uses the following ComfyUI workflow to apply Van Gogh's style to an
 - **Apply ControlNet**: Enhances the style transfer using ControlNet features.
 - **Save Image**: Saves the final Van Gogh-styled image.
 
-![WORKFLOW IMAGE]()
+![WORKFLOW IMAGE](https://github.com/muhammederem/VanGoghStyleTransfer/blob/main/assets/workflow.png)
 
 ### 7.Troubleshooting
 
